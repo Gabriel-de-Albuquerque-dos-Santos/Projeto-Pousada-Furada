@@ -1,0 +1,21 @@
+{
+  "name": "projeto-pousada-furada",
+  "version": "1.0.0",
+  "description": "Aplicação web SPA desenvolvida em Next.js, com foco em CI/CD, TDD e boas práticas de versionamento.",
+  "main": "next.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gabriel-de-Albuquerque-dos-Santos/Projeto-Pousada-Furada.git"
+  },
+  "keywords": [],
+  "author": "Gabriel de Albuquerque dos Santos",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Gabriel-de-Albuquerque-dos-Santos/Projeto-Pousada-Furada/issues"
+  },
+  "homepage": "https://github.com/Gabriel-de-Albuquerque-dos-Santos/Projeto-Pousada-Furada#readme"
+}
