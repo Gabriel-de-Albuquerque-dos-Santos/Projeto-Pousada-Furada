@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./Header";
+import Footer from "./Footer";
 
 export default function Layout({ children }) {
   return (
@@ -10,13 +11,7 @@ export default function Layout({ children }) {
         {children}
       </main>
 
-      <footer style={{ 
-        textAlign: "center", 
-        padding: "1rem", 
-        borderTop: "1px solid #ccc" 
-      }}>
-        <p>© 2025 Pousada Pedra Furada</p>
-      </footer>
+      <Footer />
     </div>
   );
 }
