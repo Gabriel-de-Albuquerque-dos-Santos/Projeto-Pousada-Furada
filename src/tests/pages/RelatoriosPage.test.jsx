@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import RelatoriosPage from "../pages/RelatoriosPage";
+import RelatoriosPage from "../../pages/RelatoriosPage";
 
 test("deve renderizar os dados do relatório", () => {
   render(<RelatoriosPage />);

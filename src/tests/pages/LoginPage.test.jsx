@@ -1,6 +1,6 @@
 import { render, screen, fireEvent } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
-import LoginPage from "../pages/LoginPage";
+import LoginPage from "../../pages/LoginPage";
 
 test("deve exibir alerta se usuário ou senha estiverem vazios", () => {
   // Mock da função alert do navegador para o Jest capturar a chamada
