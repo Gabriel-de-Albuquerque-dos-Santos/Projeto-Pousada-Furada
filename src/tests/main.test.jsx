@@ -23,6 +23,7 @@ describe("main.jsx", () => {
 
     // Reseta módulos para garantir que o require reexecute o main.jsx
     jest.resetModules();
+
     const ReactDOMClient = require("react-dom/client");
     const mockCreateRoot = jest.spyOn(ReactDOMClient, "createRoot");
 

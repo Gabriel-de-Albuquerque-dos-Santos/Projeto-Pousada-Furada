@@ -25,18 +25,16 @@ export default function TarefasPage() {
   };
 
   return (
-    <section>
+    <div>
       <h2>Tarefas do Dia</h2>
       <ul>
         {tarefas.map((t) => (
-          <li key={t.id}>
+          <li key={t.id} style={{ marginBottom: "0.5rem" }}>
             {t.nome} — <strong>{t.status}</strong>{" "}
-            <button onClick={() => atualizarStatus(t.id)}>
-              Atualizar
-            </button>
+            <button onClick={() => atualizarStatus(t.id)}>Atualizar</button>
           </li>
         ))}
       </ul>
-    </section>
+    </div>
   );
 }

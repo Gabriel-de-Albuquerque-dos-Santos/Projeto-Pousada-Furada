@@ -1,6 +1,3 @@
-const { TextEncoder, TextDecoder } = require('util');
-global.TextEncoder = TextEncoder;
-global.TextDecoder = TextDecoder;
 require("@testing-library/jest-dom");
 
 // Silencia o warning do React sobre JSX transform antigo
@@ -14,3 +11,8 @@ console.warn = (...args) => {
   }
   originalWarn(...args);
 };
+
+// CORREÇÃO DO TEXTENCODER (Essencial para o react-router-dom)
+const { TextEncoder, TextDecoder } = require("util");
+if (!global.TextEncoder) global.TextEncoder = TextEncoder;
+if (!global.TextDecoder) global.TextDecoder = TextDecoder;

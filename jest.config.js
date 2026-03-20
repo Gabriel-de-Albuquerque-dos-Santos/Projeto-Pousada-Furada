@@ -1,9 +1,10 @@
 /** @type {import('jest').Config} */
 const config = {
   testEnvironment: "jsdom",
+  // Esta linha abaixo é a que "chama" a correção do TextEncoder:
   setupFilesAfterEnv: ["<rootDir>/jest.setup.js"],
+  
   moduleNameMapper: {
-    // ignora importações de CSS, imagens etc. durante o teste
     "\\.(css|less|scss|sass)$": "identity-obj-proxy",
     "\\.(jpg|jpeg|png|gif|webp|svg)$": "<rootDir>/__mocks__/fileMock.js",
   },
@@ -12,4 +13,5 @@ const config = {
     "^.+\\.(js|jsx|ts|tsx)$": "babel-jest",
   },
 };
+
 module.exports = config;

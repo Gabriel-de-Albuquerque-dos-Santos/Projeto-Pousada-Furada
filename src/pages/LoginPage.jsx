@@ -17,29 +17,29 @@ export default function LoginPage() {
   };
 
   return (
-    <section>
+    <div>
       <h2>Login</h2>
       <form onSubmit={handleLogin}>
-        <label>
-          Usuário:
-          <input 
-            type="text" 
-            value={usuario} 
-            onChange={(e) => setUsuario(e.target.value)} 
+        <div style={{ marginBottom: "1rem" }}>
+          <label htmlFor="usuario">Usuário: </label>
+          <input
+            id="usuario"
+            type="text"
+            value={usuario}
+            onChange={(e) => setUsuario(e.target.value)}
           />
-        </label>
-        <br />
-        <label>
-          Senha:
-          <input 
-            type="password" 
-            value={senha} 
-            onChange={(e) => setSenha(e.target.value)} 
+        </div>
+        <div style={{ marginBottom: "1rem" }}>
+          <label htmlFor="senha">Senha: </label>
+          <input
+            id="senha"
+            type="password"
+            value={senha}
+            onChange={(e) => setSenha(e.target.value)}
           />
-        </label>
-        <br />
+        </div>
         <button type="submit">Entrar</button>
       </form>
-    </section>
+    </div>
   );
 }

@@ -1,9 +1,6 @@
 module.exports = {
   presets: [
-    [
-      "@babel/preset-react",
-      { runtime: "automatic" }
-    ],
-    "next/babel"
+    "next/babel",         // Faz o Jest entender Next.js e ES Modules 
+    "@babel/preset-react" // Faz o Jest entender JSX 
   ]
 };
